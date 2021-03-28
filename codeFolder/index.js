@@ -26,13 +26,13 @@ var insert5 = 'INSERT INTO trades7 VALUES(?,?,?,?,?,?)';
 var insert6 = 'INSERT INTO trades7 VALUES(?,?,?,?,?,?,?)';
 
 
-var lab1 = '822341306272972830';
-var lab2 = '822341306272972830';
-var errorMessages = '821995853400768552';
-var internLounge = '824164085456306186';
-var reaperChat = '768848147676921887';
-var reaperCallOuts = '768847531223285790';
-var executiveErrors = '824167501326974986';
+var lab1 = 'CHANNEL_ID';
+var lab2 = 'CHANNEL_ID';
+var errorMessages = 'CHANNEL_ID';
+var internLounge = 'CHANNEL_ID';
+var reaperChat = 'CHANNEL_ID';
+var reaperCallOuts = 'CHANNEL_ID';
+var executiveErrors = 'CHANNEL_ID';
 client.on('message', message => {
 
   if (message.author.bot) return;
@@ -46,7 +46,7 @@ client.on('message', message => {
     client.channels.cache.get(errorMessages).send('There was an error trying to execute that command!');
   }
   if (message.channel.name == "reaper-call-outs") {
-    if ((message.author.toString() == '<@666088354147729420>' || message.author.toString() == '<@427616391206666252>') && message.toString().toLowerCase().includes('%')) {
+    if ((message.author.toString() == '<@USER_ID>' || message.author.toString() == '<@USER_ID>') && message.toString().toLowerCase().includes('%')) {
       client.channels.cache.get(reaperChat).send('Manage positions! #reaper-call-outs');
     }
   }
