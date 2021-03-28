@@ -69,5 +69,5 @@ client.on('ready', () => {
   database.close();
 
 });
-client.login('Nzc2MTQwMDUxMjkzMjc0MTYy.X6wiwA.LzvlWNfU-4Um1eWzTmHOzOZNPZg');
+client.login('TOEKN GOES HERE');
 
