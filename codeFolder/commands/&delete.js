@@ -3,7 +3,7 @@ module.exports = {
     execute(client, sqlite3, message, args, fileLocation, createTableTrades, insert4, insert5, insert6, lab1, lab2, errorMessages, internLounge, reaperChat, reaperCallOuts, executiveErrors) {
         return new Promise(resolve => {
             
-            if ((message.author.toString() !== '<@666088354147729420>' && message.author.toString() !== '<@427616391206666252>')){
+            if ((message.author.toString() !== '<@USER_ID>' && message.author.toString() !== '<@USER_ID>')){
                 return;
             } 
 
